@@ -6,10 +6,7 @@ def find_item_by_name_in_collection(name, collection)
   # Consult README for inputs and outputs
   item_info = []
   
-  collection.each do |key, value|
-        test1 = key[1]
-        test2 = key[2]
-        binding.pry
+  collection.each do |key|
       key.each do |element|
         if element[1] == name
           return element
