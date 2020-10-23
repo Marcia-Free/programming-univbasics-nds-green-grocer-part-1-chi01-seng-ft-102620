@@ -31,7 +31,7 @@ def consolidate_cart(cart)
     
     receipt.count(key) do
       current_item
-    #binding.pry
+    binding.pry
     end
     
     receipt << current_item
