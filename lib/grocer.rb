@@ -22,18 +22,18 @@ def consolidate_cart(cart)
   current_item = ""
   test_cart = []
   
-  cart.each do |c_item|
-    current_item = c_item
+  cart.each do |item|
+    current_item = item
     current_item[:count] = 1
+    
+    receipt.count
     
     receipt << current_item
   end
   
-  receipt.uniq do |item|
-    item
+
     test_cart << item
     #binding.pry
-  end
 
 receipt
 binding.pry
