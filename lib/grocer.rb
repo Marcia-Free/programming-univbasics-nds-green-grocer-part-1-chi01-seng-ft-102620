@@ -28,7 +28,7 @@ def consolidate_cart(cart)
     receipt << current_item
   end
 
-  receipt.count |c_item|
+  receipt.count do |c_item|
     
     test_cart << c_item
     binding.pry
