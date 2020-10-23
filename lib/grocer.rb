@@ -8,19 +8,17 @@ def find_item_by_name_in_collection(name, collection)
   
   collection.each do |key|
       key.each do |element|
-        if element[1] == name
+        
+        if element[0] == name
           return element
           binding.pry
         end
         
     end
-    
   end
   #binding.pry
-  
-
-
 end
+
 
 def consolidate_cart(cart)
   # Consult README for inputs and outputs
