@@ -30,6 +30,8 @@ def consolidate_cart(cart)
     current_item[:count] = 1
     
     receipt.find_all do
+      current_item
+      current_item[count] += 1
     binding.pry
     end
     
