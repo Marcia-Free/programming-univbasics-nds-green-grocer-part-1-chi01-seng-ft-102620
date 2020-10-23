@@ -21,6 +21,12 @@ def consolidate_cart(cart)
   receipt = []
   current_item = ""
   test_cart = []
+  
+  cart.each do |item|
+    current_item = item
+    current_item[:count] = 0
+    receipt << current_item
+  end
 
   receipt.count do |c_item|
     c_item[:count] += 1
