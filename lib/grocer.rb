@@ -31,7 +31,7 @@ def consolidate_cart(cart)
   
   receipt.uniq do |item|
     test_cart << item
-    binding.pry
+    #binding.pry
   end
 
 receipt
