@@ -31,7 +31,7 @@ def consolidate_cart(cart)
   
   cart.count do |item|
     item == current_item
-    current_item[:count] += 1
+    current_item[:count] + 1
   end
     
     receipt << current_item
