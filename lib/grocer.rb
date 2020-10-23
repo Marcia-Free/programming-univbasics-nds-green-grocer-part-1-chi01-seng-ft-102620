@@ -17,7 +17,7 @@ def find_item_by_name_in_collection(name, collection)
 
   end
         item_info
-      binding.pry
+      #binding.pry
 end
 
 
