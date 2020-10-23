@@ -20,7 +20,7 @@ end
 def consolidate_cart(cart)
   receipt = []
   current_item = ""
-  test_cart = []
+  count_item = []
   
   cart.each do |item|
     current_item = item
