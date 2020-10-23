@@ -31,11 +31,11 @@ def consolidate_cart(cart)
   receipt.count do |c_item|
     c_item[:count] += 1
     test_cart << c_item
-    binding.pry
+    #binding.pry
   end
 
 receipt
-#binding.pry
+binding.pry
 end
 
 
