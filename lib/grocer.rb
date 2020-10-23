@@ -10,7 +10,7 @@ def find_item_by_name_in_collection(name, collection)
       key.each do |element|
         
         if element[1] == name
-          item_info >> key
+          item_info << key
         end
         
       end
