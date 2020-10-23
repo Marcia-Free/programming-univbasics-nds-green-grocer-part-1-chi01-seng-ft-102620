@@ -12,6 +12,8 @@ def find_item_by_name_in_collection(name, collection)
         if element[1] == name
           return key
           binding.pry
+        else
+          return nil
         end
         
     end
