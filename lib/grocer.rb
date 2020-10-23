@@ -33,7 +33,7 @@ def consolidate_cart(cart)
   end
 
 receipt
-binding.pry
+#binding.pry
 end
 
 
