@@ -9,8 +9,8 @@ def find_item_by_name_in_collection(name, collection)
   collection.each do |key|
       key.each do |element|
         
-        if element == name
-          return element
+        if element[1] == name
+          return key
           binding.pry
         end
         
