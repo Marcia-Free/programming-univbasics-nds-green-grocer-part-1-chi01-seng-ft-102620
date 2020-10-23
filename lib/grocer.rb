@@ -29,6 +29,10 @@ def consolidate_cart(cart)
     current_item = key
     current_item[:count] = 1
     
+    if receipt.find_all(current_item)
+      
+    end
+    
     receipt << current_item
   end
 
