@@ -14,7 +14,7 @@ def find_item_by_name_in_collection(name, collection)
           binding.pry
         end
         
-        if element[1] == name!
+        if element[1] != name
           return nil
         end
         
