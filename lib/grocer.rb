@@ -24,11 +24,13 @@ def consolidate_cart(cart)
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   receipt = []
   
-  cart.each do |key, value|
+  cart.each do |key|
     binding.pry
+    receipt << key
   end
 
-
+receipt
+binding.pry
 end
 
 
