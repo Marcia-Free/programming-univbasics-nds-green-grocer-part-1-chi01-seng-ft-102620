@@ -3,10 +3,13 @@ require 'pry'
 
 def find_item_by_name_in_collection(name, collection)
   # Implement me first!
-  #
   # Consult README for inputs and outputs
+  item_info = []
+  
   collection.each do |key, value|
       key.each do |element|
+        test1 = element[1]
+        test2 = key[element]
         binding.pry
     end
     
