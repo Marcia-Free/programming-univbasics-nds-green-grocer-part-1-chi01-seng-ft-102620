@@ -6,7 +6,7 @@ def find_item_by_name_in_collection(name, collection)
   #
   # Consult README for inputs and outputs
   collection.find do |key, value|
-    if key?(name)
+    if collection.key?(name)
       return key
     end
   end
