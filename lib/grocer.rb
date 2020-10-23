@@ -27,7 +27,8 @@ def consolidate_cart(cart)
   
   cart.each do |key|
     #binding.pry
-    receipt << key
+    current_item = key
+    receipt << current_item
   end
 
 receipt
