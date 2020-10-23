@@ -6,7 +6,9 @@ def find_item_by_name_in_collection(name, collection)
   #
   # Consult README for inputs and outputs
   collection.find do |key, value|
-
+    if key?(name)
+      return key
+    end
   end
   #binding.pry
   
