@@ -29,7 +29,7 @@ def consolidate_cart(cart)
     current_item = key
     current_item[:count] = 1
     
-    receipt.find_all(current_item) do
+    receipt.find_all do
     binding.pry
     end
     
