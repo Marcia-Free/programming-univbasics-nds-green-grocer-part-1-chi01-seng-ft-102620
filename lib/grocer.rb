@@ -8,8 +8,8 @@ def find_item_by_name_in_collection(name, collection)
   
   collection.each do |key, value|
       key.each do |element|
-        test1 = element[1]
-        test2 = element[2]
+        test1 = key[1]
+        test2 = key[2]
         binding.pry
     end
     
