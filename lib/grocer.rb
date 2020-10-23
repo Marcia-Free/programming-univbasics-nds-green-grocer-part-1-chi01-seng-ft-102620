@@ -10,17 +10,14 @@ def find_item_by_name_in_collection(name, collection)
       key.each do |element|
         
         if element[1] == name
-          return key
-          binding.pry
+          item_info >> key
         end
         
-        if element[1] != name
-          return nil
-        end
-        
-    end
+      end
+      item_info
+      binding.pry
   end
-  #binding.pry
+  #
 end
 
 
