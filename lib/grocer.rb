@@ -7,10 +7,15 @@ def find_item_by_name_in_collection(name, collection)
   item_info = []
   
   collection.each do |key, value|
-      key.each do |element|
         test1 = key[1]
         test2 = key[2]
         binding.pry
+      key.each do |element|
+        if element[1] == name
+          return element
+          binding.pry
+        end
+        
     end
     
   end
