@@ -20,6 +20,7 @@ end
 def consolidate_cart(cart)
   receipt = []
   current_item = ""
+  test_cart = []
   
   cart.each do |c_item|
     current_item = c_item
@@ -29,6 +30,7 @@ def consolidate_cart(cart)
   end
   
   receipt.uniq do |item|
+    test_cart << item
     binding.pry
   end
 
