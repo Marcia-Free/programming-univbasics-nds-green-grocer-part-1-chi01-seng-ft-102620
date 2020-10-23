@@ -32,7 +32,7 @@ def consolidate_cart(cart)
     receipt.count do |element|
       current_item
       current_item[:count] + 1
-    #binding.pry
+    binding.pry
     end
     
     receipt << current_item
